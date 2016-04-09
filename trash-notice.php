@@ -26,8 +26,6 @@ function msi_bulk_post_updated_messages_filter( $bulk_messages, $bulk_counts ) {
 		'trashed'   => _n( '%s post moved to the Trash. Posts in trash are automatically deleted after '.$number_days.' days.', '%s posts moved to the Trash. Posts in trash are automatically deleted after '.$number_days.' days.', $bulk_counts['trashed'] ),
     );
 
-    return $bulk_messages;
-
     $bulk_messages['page'] = array(
 		'trashed'   => _n( '%s page moved to the Trash. Pages in trash are automatically deleted after '.$number_days.' days.', '%s pages moved to the Trash. Pages in trash are automatically deleted after '.$number_days.' days.', $bulk_counts['trashed'] ),
     );
@@ -52,7 +50,7 @@ function msi_trash_warning() {
 			</div>
 		<?php
 	}
-	
+
 }
 
 add_action( 'admin_notices', 'msi_trash_warning' );
