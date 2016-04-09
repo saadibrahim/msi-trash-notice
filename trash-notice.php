@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Trash Notice
- * Description: Warns user about WP Trash being clared in 30 days.
+ * Description: Warns user about WP Trash being cleared in 30 days. Helpful for developers with lots of clients and sites with lots of editors.
  * Version: 0.1
  * Author: Saad Ibrahim
  * Author URI: http://saadibrahim.com
@@ -19,7 +19,7 @@ function msi_bulk_post_updated_messages_filter( $bulk_messages, $bulk_counts ) {
     return $bulk_messages;
 
     $bulk_messages['page'] = array(
-		'trashed'   => _n( '%s page moved to the Trash. Posts in trash are automatically deleted after 30 days.', '%s pages moved to the Trash. Posts in trash are automatically deleted after 30 days.', $bulk_counts['trashed'] ),
+		'trashed'   => _n( '%s page moved to the Trash. Pages in trash are automatically deleted after 30 days.', '%s pages moved to the Trash. Pages in trash are automatically deleted after 30 days.', $bulk_counts['trashed'] ),
     );
 
     return $bulk_messages;
