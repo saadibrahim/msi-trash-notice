@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Trash Notice
  * Description: Warns user about WP Trash being cleared in 30 days. Helpful for developers with lots of clients and sites with lots of editors.
- * Version: 0.1
+ * Version: 1.0
  * Author: Saad Ibrahim
  * Author URI: http://saadibrahim.com
  * Text Domain: msi-trash-notice
