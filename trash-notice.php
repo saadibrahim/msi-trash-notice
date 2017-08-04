@@ -22,15 +22,15 @@ function msi_bulk_post_updated_messages_filter( $bulk_messages, $bulk_counts ) {
 
 	$number_days = msi_get_number_days();
 
-    $bulk_messages['post'] = array(
+	$bulk_messages['post'] = array(
 		'trashed'   => _n( '%s post moved to the Trash. Posts in trash are automatically deleted after '.$number_days.' days.', '%s posts moved to the Trash. Posts in trash are automatically deleted after '.$number_days.' days.', $bulk_counts['trashed'] ),
-    );
+	);
 
-    $bulk_messages['page'] = array(
+	$bulk_messages['page'] = array(
 		'trashed'   => _n( '%s page moved to the Trash. Pages in trash are automatically deleted after '.$number_days.' days.', '%s pages moved to the Trash. Pages in trash are automatically deleted after '.$number_days.' days.', $bulk_counts['trashed'] ),
-    );
+	);
 
-    return $bulk_messages;
+   	return $bulk_messages;
 
 }
 
